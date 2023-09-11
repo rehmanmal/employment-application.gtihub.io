@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital@1&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title_small{
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    padding: 6px 10px;
+    border: 2px solid rgb(124, 113, 243);
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+
+.textarea_control textarea{
+    width: 100%;
+}
+
+@media (max-width: 460px) {
+    .textarea_control{
+        grid-column: 1 / span 1;
+    }
+};
